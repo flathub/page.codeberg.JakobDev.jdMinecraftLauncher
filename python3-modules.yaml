@@ -32,8 +32,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/6e/37/abb65eac43b233007dc5457e020809f2db9d0fb2fc8165bfda836ccbe532/minecraft_launcher_lib-6.0-py3-none-any.whl
-        sha256: 2485d98167eb9d7100a8d2b75ef1a4e8d00c77d781d1c1b76dc6baaf19fc128a
+        url: https://files.pythonhosted.org/packages/fa/d9/69404846c67cf8a6aa09a968e9cf7594bca07eaebff58b6884853780730f/minecraft_launcher_lib-6.1-py3-none-any.whl
+        sha256: 4e44e9adb94f64c7002813729ee8bcf9acb54ef77e0c7928b2f111509f94ae6d
         x-checker-data:
           name: minecraft_launcher_lib
           packagetype: bdist_wheel
