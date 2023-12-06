@@ -42,8 +42,6 @@ modules:
 
   - name: gamemode
     buildsystem: meson
-    build-options:
-      cflags: -Wno-error=implicit-function-declaration
     config-opts:
       - -Dwith-examples=false
       - -Dwith-util=false
