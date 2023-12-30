@@ -40,6 +40,22 @@ modules:
       - mv /app/jre /app/jvm/openjdk17
       - ln -s /app/jvm/openjdk17/bin/java /app/bin/java
 
+  - name: flite
+    buildsystem: autotools
+    config-opts:
+      - --enable-shared
+    no-parallel-make: true
+    sources:
+      - type: archive
+        archive-type: tar-gzip
+        url: https://api.github.com/repos/festvox/flite/tarball/v2.2
+        sha256: 6ec1dbc3feb3554ad280de3d91d74c65b79147ce6efba1a273ef92ce9fe005f1
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/festvox/flite/releases/latest
+          version-query: .tag_name
+          url-query: .tarball_url
+
   - name: gamemode
     buildsystem: meson
     config-opts:
@@ -67,7 +83,7 @@ modules:
     sources:
       - type: archive
         url: https://codeberg.org/JakobDev/jdMinecraftLauncher/archive/5.2.tar.gz
-        sha256: 0f63819ad0c7ed27b0e4e486f3550031d12986ac4160d34ba1932c97393208db
+        sha256: a434bd1db63276ca3d50cf668952629d6914b5e5fc053fd43832393a1197191f
         x-checker-data:
           type: json
           url: https://codeberg.org/api/v1/repos/JakobDev/jdMinecraftLauncher/releases/latest
