@@ -11,8 +11,8 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk17
   - org.freedesktop.Sdk.Extension.openjdk8
 finish-args:
-  - --socket=fallback-x11
   - --socket=wayland
+  - --socket=x11
   - --share=ipc
   - --device=dri
   - --share=network
@@ -82,8 +82,8 @@ modules:
       - python ./install-unix-datafiles.py --prefix=$FLATPAK_DEST
     sources:
       - type: archive
-        url: https://codeberg.org/JakobDev/jdMinecraftLauncher/archive/5.4.tar.gz
-        sha256: bdb16de27cf705166613ff112cdaa91c5b98fdd89903fa5d64dc457d0035b2ca
+        url: https://codeberg.org/JakobDev/jdMinecraftLauncher/archive/6.0.tar.gz
+        sha256: bea2d6ccdc1e46a24b1724e4c9ea403d8a712a7a2aa942335396c71424b635bd
         x-checker-data:
           type: json
           url: https://codeberg.org/api/v1/repos/JakobDev/jdMinecraftLauncher/releases/latest
