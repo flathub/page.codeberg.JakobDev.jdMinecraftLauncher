@@ -10,8 +10,8 @@ modules:
     sources:
       - &id001
         type: file
-        url: https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl
-        sha256: 922820b53db7a7257ffbda3f597266d435245903d80737e34f8a45ff3e3230d8
+        url: https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl
+        sha256: 1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56
         x-checker-data:
           name: certifi
           packagetype: bdist_wheel
@@ -72,8 +72,8 @@ modules:
         --prefix=${FLATPAK_DEST} "setproctitle" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/ff/e1/b16b16a1aa12174349d15b73fd4b87e641a8ae3fb1163e80938dbbf6ae98/setproctitle-1.3.3.tar.gz
-        sha256: c913e151e7ea01567837ff037a23ca8740192880198b7fbb90b16d181607caae
+        url: https://files.pythonhosted.org/packages/ae/4e/b09341b19b9ceb8b4c67298ab4a08ef7a4abdd3016c7bb152e9b6379031d/setproctitle-1.3.4.tar.gz
+        sha256: 3b40d32a3e1f04e94231ed6dfee0da9e43b4f9c6b5450d53e6dd7754c34e0c50
         x-checker-data:
           name: setproctitle
           type: pypi
