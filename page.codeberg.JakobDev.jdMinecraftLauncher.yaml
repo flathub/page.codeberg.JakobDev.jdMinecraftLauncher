@@ -82,8 +82,8 @@ modules:
       - python ./install-unix-datafiles.py --prefix=$FLATPAK_DEST
     sources:
       - type: archive
-        url: https://codeberg.org/JakobDev/jdMinecraftLauncher/archive/6.0.tar.gz
-        sha256: bea2d6ccdc1e46a24b1724e4c9ea403d8a712a7a2aa942335396c71424b635bd
+        url: https://codeberg.org/JakobDev/jdMinecraftLauncher/archive/6.1.tar.gz
+        sha256: ef38f8428847792a5c3736596ad59213588ae3dab563da6a4012302017cd801c
         x-checker-data:
           type: json
           url: https://codeberg.org/api/v1/repos/JakobDev/jdMinecraftLauncher/releases/latest
