@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator --yaml --checker-data minecraft-launcher-lib requests setproctitle desktop-entry-lib feedparser
+# Generated with flatpak-pip-generator --yaml --checker-data --cleanup scripts minecraft-launcher-lib requests setproctitle desktop-entry-lib feedparser jeepney
 build-commands: []
 buildsystem: simple
 modules:
@@ -32,8 +32,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/cb/ca/3f0e13d10a55ac08a3bb11eab09a0618d4c15db6dd7894bcb59d8b7c89d9/minecraft_launcher_lib-7.1-py3-none-any.whl
-        sha256: 7e8ec49a25bd93d6a388553abf34ee2cda8e884a992129e1198fac0e75421a91
+        url: https://files.pythonhosted.org/packages/4d/ff/ac903044f43558af87999dda35e7a3c31d278f766e83e484b24d572fdffe/minecraft_launcher_lib-8.0-py3-none-any.whl
+        sha256: ff17960c62e21ca7e21329303ae56bdefc0246de3bc9a5e1578dfa8df6604746
         x-checker-data:
           name: minecraft_launcher_lib
           packagetype: bdist_wheel
@@ -54,6 +54,9 @@ modules:
           name: urllib3
           packagetype: bdist_wheel
           type: pypi
+    cleanup:
+      - /bin
+      - /share/man/man1
   - name: python3-requests
     buildsystem: simple
     build-commands:
@@ -65,6 +68,9 @@ modules:
       - *id003
       - *id004
       - *id005
+    cleanup:
+      - /bin
+      - /share/man/man1
   - name: python3-setproctitle
     buildsystem: simple
     build-commands:
@@ -77,6 +83,9 @@ modules:
         x-checker-data:
           name: setproctitle
           type: pypi
+    cleanup:
+      - /bin
+      - /share/man/man1
   - name: python3-desktop-entry-lib
     buildsystem: simple
     build-commands:
@@ -90,6 +99,9 @@ modules:
           name: desktop_entry_lib
           packagetype: bdist_wheel
           type: pypi
+    cleanup:
+      - /bin
+      - /share/man/man1
   - name: python3-feedparser
     buildsystem: simple
     build-commands:
@@ -109,4 +121,23 @@ modules:
         x-checker-data:
           name: sgmllib3k
           type: pypi
+    cleanup:
+      - /bin
+      - /share/man/man1
+  - name: python3-jeepney
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "jeepney" --no-build-isolation
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/b2/a3/e137168c9c44d18eff0376253da9f1e9234d0239e0ee230d2fee6cea8e55/jeepney-0.9.0-py3-none-any.whl
+        sha256: 97e5714520c16fc0a45695e5365a2e11b81ea79bba796e26f9f1d178cb182683
+        x-checker-data:
+          name: jeepney
+          packagetype: bdist_wheel
+          type: pypi
+    cleanup:
+      - /bin
+      - /share/man/man1
 name: python3-modules
