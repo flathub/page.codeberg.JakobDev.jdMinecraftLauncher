@@ -116,10 +116,11 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/9e/bd/3704a8c3e0942d711c1299ebf7b9091930adae6675d7c8f476a7ce48653c/sgmllib3k-1.0.0.tar.gz
-        sha256: 7868fb1c8bfa764c1ac563d3cf369c381d1325d36124933a726f29fcdaa812e9
+        url: https://files.pythonhosted.org/packages/91/57/a2a8e39270d8742b21e5a030b809573e35ab57400487f98bfcb6cca766ad/feedparser_sgmllib-1.0.0-py3-none-any.whl
+        sha256: d0d5daf29b3f315396d4d5a65b5fe28862d1bc4ea37dec826ccbf1021034a959
         x-checker-data:
-          name: sgmllib3k
+          name: feedparser_sgmllib
+          packagetype: bdist_wheel
           type: pypi
     cleanup:
       - /bin
