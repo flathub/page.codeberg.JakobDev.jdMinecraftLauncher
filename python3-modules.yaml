@@ -109,15 +109,15 @@ modules:
         --prefix=${FLATPAK_DEST} "feedparser" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/df/6b/402c049864f7e1181e603b37b36690409ce5fd014417bf234724dbb95c87/feedparser-6.0.13-py3-none-any.whl
-        sha256: ff00fcd62a1bba943ad6dadb7e3139bc3e2d9e027859343283112d605e794e52
+        url: https://files.pythonhosted.org/packages/7f/61/f04912e63702e73fb2a378f9c0a1ad9eb17a334a11a6b3fe1daa593903c2/feedparser-6.0.14-py3-none-any.whl
+        sha256: e35e3f760151b0c3b22cac9684155cae186a233e16c49bcbc6c49e91e3131137
         x-checker-data:
           name: feedparser
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/91/57/a2a8e39270d8742b21e5a030b809573e35ab57400487f98bfcb6cca766ad/feedparser_sgmllib-1.0.0-py3-none-any.whl
-        sha256: d0d5daf29b3f315396d4d5a65b5fe28862d1bc4ea37dec826ccbf1021034a959
+        url: https://files.pythonhosted.org/packages/dd/a7/aec3abb52f9487aed4bd9c645276277f3f335f42ee3733ea03797bc5d577/feedparser_sgmllib-2.0.0-py3-none-any.whl
+        sha256: 91d4175a7de40c2fa08352021fb9aa42d1046150648487c5819fe561b379877d
         x-checker-data:
           name: feedparser_sgmllib
           packagetype: bdist_wheel
