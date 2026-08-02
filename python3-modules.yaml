@@ -116,8 +116,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/44/ce/35ac725a2b0e6b3f4e03bb68167501cdecf3935132927c61342747f734a9/feedparser_sgmllib-2.0.1-py3-none-any.whl
-        sha256: 113d6e0d7e1196200a13013044999aef75772d515f25a3e77c5e2047eb82c212
+        url: https://files.pythonhosted.org/packages/85/a0/79a31f898092e145bd66e2b338fb0656979acb2bbbcae8220940fbfcd820/feedparser_sgmllib-2.1.0-py3-none-any.whl
+        sha256: 2cab2d43b95a954f920f18aebce7a4dbbb3f539780b127e2aa114f579821e01d
         x-checker-data:
           name: feedparser_sgmllib
           packagetype: bdist_wheel
